@@ -10,11 +10,14 @@ import androidx.recyclerview.widget.RecyclerView
 import app.nickname.myoji.bughouse.R
 
 class ListActivity : AppCompatActivity() {
-    private val taskList: List<String> = arrayListOf("Task 1", "Task 2", "Task 3")
+    //private val taskList = mutableListOf("Task 1", "Task 2", "Task 3")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_list)
+
+        //val taskList: MutableList<String> = mutableListOf("Task 1", "Task 2", "Task 3")
+        val taskList = mutableListOf<String>("Task 2", "Task 1", "Task 3")
 
         val recyclerView: RecyclerView = findViewById(R.id.recycler_view)
         val addButton: Button = findViewById(R.id.button)
